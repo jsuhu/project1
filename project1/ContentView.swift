@@ -16,13 +16,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             cards
-            HStack {
-                cardRemover
-                Spacer()
-                cardAdder
-            }
-            .imageScale(.large)
-            .font(.largeTitle)
+            cardCountAdjusters
         }
         .padding()
     }
@@ -34,6 +28,25 @@ struct ContentView: View {
             }
         }
         .foregroundColor(.orange)
+    }
+    
+    var cardCountAdjusters: some View {
+        HStack {
+            cardRemover
+            Spacer()
+            cardAdder
+        }
+        .imageScale(.large)
+        .font(.largeTitle)
+    }
+    
+    func cardCountAdjuster(by offset: Int, symbol: String) -> some View {
+        Button(action: {
+            cardCount += offset
+        }, label: {
+            Image(systemName: symbol)
+        })
+        
     }
     
     var cardRemover: some View {

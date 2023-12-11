@@ -14,18 +14,34 @@ struct ContentView: View {
     @State var cardCount: Int = 4
     
     var body: some View {
-        HStack {
-            ForEach(0..<cardCount, id: \.self) {index in
-                CardView(content: emojis[index])
+        VStack {
+            HStack {
+                ForEach(0..<cardCount, id: \.self) {index in
+                    CardView(content: emojis[index])
+                }
             }
-            Button("Remove Card") {
-                cardCount -= 1
+            .foregroundColor(.orange)
+
+            
+            HStack {
+                
+                Button(action: {
+                    cardCount -= 1
+                }, label: {
+                    Image(systemName: "rectangle.stack.badge.minus.fill")
+                })
+                
+                Spacer()
+
+                Button(action: {
+                    cardCount -= 1
+                }, label: {
+                    Image(systemName: "rectangle.stack.badge.plus.fill")
+                })
             }
-            Button("Add Card") {
-                cardCount += 1
-            }
+            .imageScale(.large)
+            .font(.largeTitle)
         }
-        .foregroundColor(.orange)
         .padding()
     }
 }
@@ -36,7 +52,7 @@ struct CardView: View {
      
     var body: some View {
         ZStack {
-            let base = Circle()//RoundedRectangle(cornerRadius: 12)
+            let base = RoundedRectangle(cornerRadius: 12) //Circle()
             if isFaceUp {
                 base.fill(.white)
                 base.strokeBorder(lineWidth: 2)

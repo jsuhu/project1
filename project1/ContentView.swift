@@ -34,7 +34,7 @@ struct CardView: View {
                 base.fill()
             }
         }
-        .onTapGesture {
+        .onTapGesture { //(count: 2)
             isFaceUp.toggle()
             print("tapped")
         }

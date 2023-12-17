@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B4BB20A2B237C74007E395E /* project1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BB2092B237C74007E395E /* project1App.swift */; };
+		1B4BB20A2B237C74007E395E /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BB2092B237C74007E395E /* MemorizeApp.swift */; };
 		1B4BB20C2B237C74007E395E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BB20B2B237C74007E395E /* ContentView.swift */; };
 		1B4BB20E2B237C76007E395E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BB20D2B237C76007E395E /* Assets.xcassets */; };
 		1B4BB2112B237C76007E395E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BB2102B237C76007E395E /* Preview Assets.xcassets */; };
+		1BF653AA2B2F838C00AE2B37 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF653A92B2F838C00AE2B37 /* MemoryGame.swift */; };
+		1BF653AC2B2F848B00AE2B37 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF653AB2B2F848B00AE2B37 /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B4BB2062B237C74007E395E /* project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B4BB2092B237C74007E395E /* project1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project1App.swift; sourceTree = "<group>"; };
+		1B4BB2092B237C74007E395E /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
 		1B4BB20B2B237C74007E395E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B4BB20D2B237C76007E395E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4BB2102B237C76007E395E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1BF653A92B2F838C00AE2B37 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		1BF653AB2B2F848B00AE2B37 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 		1B4BB1FD2B237C74007E395E = {
 			isa = PBXGroup;
 			children = (
-				1B4BB2082B237C74007E395E /* project1 */,
+				1B4BB2082B237C74007E395E /* Memorize */,
 				1B4BB2072B237C74007E395E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,15 +52,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1B4BB2082B237C74007E395E /* project1 */ = {
+		1B4BB2082B237C74007E395E /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
-				1B4BB2092B237C74007E395E /* project1App.swift */,
+				1B4BB2092B237C74007E395E /* MemorizeApp.swift */,
 				1B4BB20B2B237C74007E395E /* ContentView.swift */,
+				1BF653A92B2F838C00AE2B37 /* MemoryGame.swift */,
+				1BF653AB2B2F848B00AE2B37 /* EmojiMemoryGame.swift */,
 				1B4BB20D2B237C76007E395E /* Assets.xcassets */,
 				1B4BB20F2B237C76007E395E /* Preview Content */,
 			);
-			path = project1;
+			path = Memorize;
 			sourceTree = "<group>";
 		};
 		1B4BB20F2B237C76007E395E /* Preview Content */ = {
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B4BB20C2B237C74007E395E /* ContentView.swift in Sources */,
-				1B4BB20A2B237C74007E395E /* project1App.swift in Sources */,
+				1B4BB20A2B237C74007E395E /* MemorizeApp.swift in Sources */,
+				1BF653AA2B2F838C00AE2B37 /* MemoryGame.swift in Sources */,
+				1BF653AC2B2F848B00AE2B37 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
